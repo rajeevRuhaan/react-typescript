@@ -27,3 +27,39 @@ select desire font and copy the import link and paste to index.css
 ```script
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 ```
+## Form handling define types
+
+```script
+export interface IUser {
+    username: string;
+    password: string;
+}
+interface IState{
+    user: IUser
+}
+interface IProps{}
+
+const LoginForm: React.FC<IProps> = () => {
+const [state, setState] = useState<IState>({
+    user: {
+        username: '',
+        password: '',
+    } 
+})
+
+const updateInput = (event:React.ChangeEvent<HTMLInputElement>): void=> {
+setState({
+    user: {
+        ...state.user,
+        [event.target.name]: event.target.value
+    }
+})
+}
+
+const login = (event: React.FormEvent<HTMLFormElement>): void => {
+    event.preventDefault();
+    console.log(state.user)
+} 
+return (....)
+}
+```

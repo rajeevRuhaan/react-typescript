@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import IUser from '../models/IUser';
+import {IUser} from '../models/IUser';
 
 interface IState{
     user: IUser
