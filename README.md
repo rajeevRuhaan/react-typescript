@@ -27,3 +27,15 @@ select desire font and copy the import link and paste to index.css
 ```script
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 ```
+
+## Declearing props in type script pass props in functional component
+```script
+interface IProps {
+    name: string;
+    age: number;
+    title: string;
+}
+
+const Customer:React.FC<IProps> = ({name, age, title}) => {return ()}
+```
+## Declearing 
