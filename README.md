@@ -27,3 +27,42 @@ select desire font and copy the import link and paste to index.css
 ```script
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 ```
+## Declearing state in typescript in functional and class component
+functional component
+```script
+interface IState {
+    name: string;
+    age: number;
+    title: string;
+}
+const Employee:React.FC<IProps> = () => {
+    const [state, setState] = useState<IState>({
+    name: 'Rajeev',
+    age: 35,
+    title: 'Frontend Developer',
+})
+    return()}
+```
+Class component
+```script
+interface IState {
+    name: string;
+    age: number;
+    title: string;
+}
+export default class EmployeeClass extends Component<IProps, IState> {
+
+    constructor(props: IProps) {
+        super(props)
+        this.state = {
+            name: 'John',
+            age: 40,
+            title: 'Software Developer',
+        } as IState
+    }
+
+  render() { 
+    return ()
+  }
+  }
+```

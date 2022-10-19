@@ -4,7 +4,6 @@ interface IState {
     name: string;
     age: number;
     title: string;
-
 }
 interface IProps {
 
