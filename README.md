@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Getting Started with Create React App 
+## Learning react and typescript
 
 ```script
 npx create-react-app [project name] --template=typescript
