@@ -27,3 +27,22 @@ select desire font and copy the import link and paste to index.css
 ```script
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 ```
+
+## state type defined in event handling
+```script
+interface IState {
+count : number,
+}
+const Counter:React.FC<IProps> = () => { 
+    const [state, setState] = useState<IState>({
+        count: 10
+    })
+
+    const incr = () : void=> {
+        setState({count: state.count + 1})
+    }
+    const decr = () : void=> {
+        setState({count: state.count - 1})
+    }
+    return ()}
+```
