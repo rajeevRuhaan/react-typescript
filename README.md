@@ -27,3 +27,17 @@ select desire font and copy the import link and paste to index.css
 ```script
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 ```
+## Server connection
+- install Axios
+```script
+npm install axios @types/axios
+```
+- Fake rest API jsonplaceholder link
+```script
+https://jsonplaceholder.typicode.com/users
+```
+
+## types conversion using this link
+```script
+https://jvilk.com/MakeTypes/
+```
